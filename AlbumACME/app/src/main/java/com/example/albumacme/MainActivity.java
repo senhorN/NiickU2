@@ -3,18 +3,20 @@ package com.example.albumacme;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     TextView txtFoto;
     ImageView imgFoto;
-    button btnFoto1, btnFoto2;
+    Button btnFoto1, btnFoto2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        txtFoto = (TextView) findViewById(R.id.txtFoto1);
+        txtFoto = (TextView) findViewById(R.id.txtFoto);
         imgFoto = (ImageView) findViewById(R.id.imgFoto);
         btnFoto1 = (Button) findViewById(R.id.btnFoto1);
         btnFoto2 = (Button) findViewById(R.id.btnFoto2);
